@@ -23,6 +23,15 @@
   color: #61dafb;
 }
 
+.list-group1 {
+  max-height: 74vh;
+  overflow-y: auto;
+}
+
+.row1 {
+  max-width: 100vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
