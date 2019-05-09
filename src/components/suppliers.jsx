@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Supplier from "./supplier";
+import Supplier from "./supplier.jsx";
 import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";

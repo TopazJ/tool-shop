@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
-import NavBar from "./components/navbar";
-import Tools from "./components/tools";
-import Buttons from "./components/buttons";
-import Suppliers from "./components/suppliers";
+import NavBar from "./components/navbar.jsx";
+import Tools from "./components/tools.jsx";
+import Buttons from "./components/buttons.jsx";
+import Suppliers from "./components/suppliers.jsx";
 
 import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
@@ -149,7 +150,7 @@ class App extends Component {
         }
     };
 
-    readTextFile = (file, type) => {
+    readTextFile = type => {
         const rawFile = new XMLHttpRequest();
         rawFile.open("GET", file, false);
         rawFile.onreadystatechange = () => {

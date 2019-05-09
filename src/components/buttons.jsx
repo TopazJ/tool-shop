@@ -14,9 +14,7 @@ class Buttons extends Component {
                     </Button>
                     <Button
                         bsPrefix="btn btn-success btn-sm m-2"
-                        onClick={() =>
-                            importFile("./text/" + type + "s.txt", type)
-                        }
+                        onClick={() => importFile(type)}
                     >
                         Import {type}s
                     </Button>

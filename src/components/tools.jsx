@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Tool from "./tool";
+import Tool from "./tool.jsx";
 import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
