@@ -1,9 +1,0 @@
-
-              <form class="form-class my-2 my-lg-2">
-                <input
-                  class="form-control mr-sm-2"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-              </form>
-          
