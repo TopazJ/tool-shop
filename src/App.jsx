@@ -151,10 +151,7 @@ class App extends Component {
 
     readTextFile = type => {
         const rawFile = new XMLHttpRequest();
-        const file =
-            "https://cors-anywhere.herokuapp.com/http://pages.cpsc.ucalgary.ca/~shamez.meghji1/text/" +
-            type.toLowerCase() +
-            "s.txt";
+        const file = "text/" + type.toLowerCase() + "s.txt";
         rawFile.open("GET", file, true);
         rawFile.onreadystatechange = () => {
             if (rawFile.readyState === 4) {
