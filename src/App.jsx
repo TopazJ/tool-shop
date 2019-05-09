@@ -138,7 +138,6 @@ class App extends Component {
         if (this.state.itemSearchInput === "") {
             const itemSearch = items;
             this.setState({ itemSearch });
-            console.log("Here");
         } else {
             const itemSearch = items.filter(item => {
                 const check = item.name + item.id;
@@ -152,7 +151,11 @@ class App extends Component {
 
     readTextFile = type => {
         const rawFile = new XMLHttpRequest();
-        rawFile.open("GET", file, false);
+        const file =
+            "https://cors-anywhere.herokuapp.com/http://pages.cpsc.ucalgary.ca/~shamez.meghji1/text/" +
+            type.toLowerCase() +
+            "s.txt";
+        rawFile.open("GET", file, true);
         rawFile.onreadystatechange = () => {
             if (rawFile.readyState === 4) {
                 if (rawFile.status === 200 || rawFile.status === 0) {
